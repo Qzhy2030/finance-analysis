@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project
+data/company_mapping.bak*
+reports/*.html
+*.log
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Keep DB (seed data for deployment)
+# data/finance_data.db
