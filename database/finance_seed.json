@@ -1,0 +1,812 @@
+[
+  {
+    "code": "601398",
+    "name": "工商银行",
+    "market": "SH",
+    "full_name": "中国工商银行股份有限公司"
+  },
+  {
+    "code": "601939",
+    "name": "建设银行",
+    "market": "SH",
+    "full_name": "中国建设银行股份有限公司"
+  },
+  {
+    "code": "601288",
+    "name": "农业银行",
+    "market": "SH",
+    "full_name": "中国农业银行股份有限公司"
+  },
+  {
+    "code": "601328",
+    "name": "交通银行",
+    "market": "SH",
+    "full_name": "交通银行股份有限公司"
+  },
+  {
+    "code": "600036",
+    "name": "招商银行",
+    "market": "SH",
+    "full_name": "招商银行股份有限公司"
+  },
+  {
+    "code": "601166",
+    "name": "兴业银行",
+    "market": "SH",
+    "full_name": "兴业银行股份有限公司"
+  },
+  {
+    "code": "600015",
+    "name": "华夏银行",
+    "market": "SH",
+    "full_name": "华夏银行股份有限公司"
+  },
+  {
+    "code": "600016",
+    "name": "民生银行",
+    "market": "SH",
+    "full_name": "中国民生银行股份有限公司"
+  },
+  {
+    "code": "600908",
+    "name": "无锡银行",
+    "market": "SH",
+    "full_name": "无锡农村商业银行股份有限公司"
+  },
+  {
+    "code": "600919",
+    "name": "江苏银行",
+    "market": "SH",
+    "full_name": "江苏银行股份有限公司"
+  },
+  {
+    "code": "600926",
+    "name": "杭州银行",
+    "market": "SH",
+    "full_name": "杭州银行股份有限公司"
+  },
+  {
+    "code": "600928",
+    "name": "西安银行",
+    "market": "SH",
+    "full_name": "西安银行股份有限公司"
+  },
+  {
+    "code": "601009",
+    "name": "南京银行",
+    "market": "SH",
+    "full_name": "南京银行股份有限公司"
+  },
+  {
+    "code": "601128",
+    "name": "常熟银行",
+    "market": "SH",
+    "full_name": "江苏常熟农村商业银行股份有限公司"
+  },
+  {
+    "code": "601169",
+    "name": "北京银行",
+    "market": "SH",
+    "full_name": "北京银行股份有限公司"
+  },
+  {
+    "code": "601187",
+    "name": "厦门银行",
+    "market": "SH",
+    "full_name": "厦门银行股份有限公司"
+  },
+  {
+    "code": "601229",
+    "name": "上海银行",
+    "market": "SH",
+    "full_name": "上海银行股份有限公司"
+  },
+  {
+    "code": "601528",
+    "name": "瑞丰银行",
+    "market": "SH",
+    "full_name": "浙江绍兴瑞丰农村商业银行股份有限公司"
+  },
+  {
+    "code": "601577",
+    "name": "长沙银行",
+    "market": "SH",
+    "full_name": "长沙银行股份有限公司"
+  },
+  {
+    "code": "601658",
+    "name": "邮储银行",
+    "market": "SH",
+    "full_name": "中国邮政储蓄银行股份有限公司"
+  },
+  {
+    "code": "601665",
+    "name": "齐鲁银行",
+    "market": "SH",
+    "full_name": "齐鲁银行股份有限公司"
+  },
+  {
+    "code": "601818",
+    "name": "光大银行",
+    "market": "SH",
+    "full_name": "中国光大银行股份有限公司"
+  },
+  {
+    "code": "601838",
+    "name": "成都银行",
+    "market": "SH",
+    "full_name": "成都银行股份有限公司"
+  },
+  {
+    "code": "601860",
+    "name": "紫金银行",
+    "market": "SH",
+    "full_name": "江苏紫金农村商业银行股份有限公司"
+  },
+  {
+    "code": "601916",
+    "name": "浙商银行",
+    "market": "SH",
+    "full_name": "浙商银行股份有限公司"
+  },
+  {
+    "code": "601963",
+    "name": "重庆银行",
+    "market": "SH",
+    "full_name": "重庆银行股份有限公司"
+  },
+  {
+    "code": "601988",
+    "name": "中国银行",
+    "market": "SH",
+    "full_name": "中国银行股份有限公司"
+  },
+  {
+    "code": "601997",
+    "name": "贵阳银行",
+    "market": "SH",
+    "full_name": "贵阳银行股份有限公司"
+  },
+  {
+    "code": "601998",
+    "name": "中信银行",
+    "market": "SH",
+    "full_name": "中信银行股份有限公司"
+  },
+  {
+    "code": "603323",
+    "name": "苏农银行",
+    "market": "SH",
+    "full_name": "江苏苏州农村商业银行股份有限公司"
+  },
+  {
+    "code": "000001",
+    "name": "平安银行",
+    "market": "SZ",
+    "full_name": "平安银行股份有限公司"
+  },
+  {
+    "code": "001227",
+    "name": "兰州银行",
+    "market": "SZ",
+    "full_name": "兰州银行股份有限公司"
+  },
+  {
+    "code": "002142",
+    "name": "宁波银行",
+    "market": "SZ",
+    "full_name": "宁波银行股份有限公司"
+  },
+  {
+    "code": "002807",
+    "name": "江阴银行",
+    "market": "SZ",
+    "full_name": "江苏江阴农村商业银行股份有限公司"
+  },
+  {
+    "code": "002936",
+    "name": "郑州银行",
+    "market": "SZ",
+    "full_name": "郑州银行股份有限公司"
+  },
+  {
+    "code": "002948",
+    "name": "青岛银行",
+    "market": "SZ",
+    "full_name": "青岛银行股份有限公司"
+  },
+  {
+    "code": "002966",
+    "name": "苏州银行",
+    "market": "SZ",
+    "full_name": "苏州银行股份有限公司"
+  },
+  {
+    "code": "601318",
+    "name": "中国平安",
+    "market": "SH",
+    "full_name": "中国平安保险(集团)股份有限公司"
+  },
+  {
+    "code": "601628",
+    "name": "中国人寿",
+    "market": "SH",
+    "full_name": "中国人寿保险股份有限公司"
+  },
+  {
+    "code": "601601",
+    "name": "中国太保",
+    "market": "SH",
+    "full_name": "中国太平洋保险(集团)股份有限公司"
+  },
+  {
+    "code": "601319",
+    "name": "中国人保",
+    "market": "SH",
+    "full_name": "中国人民保险集团股份有限公司"
+  },
+  {
+    "code": "601336",
+    "name": "新华保险",
+    "market": "SH",
+    "full_name": "新华人寿保险股份有限公司"
+  },
+  {
+    "code": "600030",
+    "name": "中信证券",
+    "market": "SH",
+    "full_name": "中信证券股份有限公司"
+  },
+  {
+    "code": "600109",
+    "name": "国金证券",
+    "market": "SH",
+    "full_name": "国金证券股份有限公司"
+  },
+  {
+    "code": "600369",
+    "name": "西南证券",
+    "market": "SH",
+    "full_name": "西南证券股份有限公司"
+  },
+  {
+    "code": "600906",
+    "name": "财达证券",
+    "market": "SH",
+    "full_name": "财达证券股份有限公司"
+  },
+  {
+    "code": "600909",
+    "name": "华安证券",
+    "market": "SH",
+    "full_name": "华安证券股份有限公司"
+  },
+  {
+    "code": "600918",
+    "name": "中泰证券",
+    "market": "SH",
+    "full_name": "中泰证券股份有限公司"
+  },
+  {
+    "code": "600958",
+    "name": "东方证券",
+    "market": "SH",
+    "full_name": "东方证券股份有限公司"
+  },
+  {
+    "code": "601059",
+    "name": "信达证券",
+    "market": "SH",
+    "full_name": "信达证券股份有限公司"
+  },
+  {
+    "code": "601108",
+    "name": "财通证券",
+    "market": "SH",
+    "full_name": "财通证券股份有限公司"
+  },
+  {
+    "code": "601136",
+    "name": "首创证券",
+    "market": "SH",
+    "full_name": "首创证券股份有限公司"
+  },
+  {
+    "code": "601162",
+    "name": "天风证券",
+    "market": "SH",
+    "full_name": "天风证券股份有限公司"
+  },
+  {
+    "code": "601198",
+    "name": "东兴证券",
+    "market": "SH",
+    "full_name": "东兴证券股份有限公司"
+  },
+  {
+    "code": "601236",
+    "name": "红塔证券",
+    "market": "SH",
+    "full_name": "红塔证券股份有限公司"
+  },
+  {
+    "code": "601375",
+    "name": "中原证券",
+    "market": "SH",
+    "full_name": "中原证券股份有限公司"
+  },
+  {
+    "code": "601377",
+    "name": "兴业证券",
+    "market": "SH",
+    "full_name": "兴业证券股份有限公司"
+  },
+  {
+    "code": "601555",
+    "name": "东吴证券",
+    "market": "SH",
+    "full_name": "东吴证券股份有限公司"
+  },
+  {
+    "code": "601688",
+    "name": "华泰证券",
+    "market": "SH",
+    "full_name": "华泰证券股份有限公司"
+  },
+  {
+    "code": "601696",
+    "name": "中银证券",
+    "market": "SH",
+    "full_name": "中银国际证券股份有限公司"
+  },
+  {
+    "code": "601788",
+    "name": "光大证券",
+    "market": "SH",
+    "full_name": "光大证券股份有限公司"
+  },
+  {
+    "code": "601878",
+    "name": "浙商证券",
+    "market": "SH",
+    "full_name": "浙商证券股份有限公司"
+  },
+  {
+    "code": "601901",
+    "name": "方正证券",
+    "market": "SH",
+    "full_name": "方正证券股份有限公司"
+  },
+  {
+    "code": "601990",
+    "name": "南京证券",
+    "market": "SH",
+    "full_name": "南京证券股份有限公司"
+  },
+  {
+    "code": "000686",
+    "name": "东北证券",
+    "market": "SZ",
+    "full_name": "东北证券股份有限公司"
+  },
+  {
+    "code": "000728",
+    "name": "国元证券",
+    "market": "SZ",
+    "full_name": "国元证券股份有限公司"
+  },
+  {
+    "code": "000750",
+    "name": "国海证券",
+    "market": "SZ",
+    "full_name": "国海证券股份有限公司"
+  },
+  {
+    "code": "000776",
+    "name": "广发证券",
+    "market": "SZ",
+    "full_name": "广发证券股份有限公司"
+  },
+  {
+    "code": "000783",
+    "name": "长江证券",
+    "market": "SZ",
+    "full_name": "长江证券股份有限公司"
+  },
+  {
+    "code": "002500",
+    "name": "山西证券",
+    "market": "SZ",
+    "full_name": "山西证券股份有限公司"
+  },
+  {
+    "code": "002670",
+    "name": "国盛金控",
+    "market": "SZ",
+    "full_name": "国盛金融控股集团股份有限公司"
+  },
+  {
+    "code": "002673",
+    "name": "西部证券",
+    "market": "SZ",
+    "full_name": "西部证券股份有限公司"
+  },
+  {
+    "code": "002736",
+    "name": "国信证券",
+    "market": "SZ",
+    "full_name": "国信证券股份有限公司"
+  },
+  {
+    "code": "002926",
+    "name": "华西证券",
+    "market": "SZ",
+    "full_name": "华西证券股份有限公司"
+  },
+  {
+    "code": "002939",
+    "name": "长城证券",
+    "market": "SZ",
+    "full_name": "长城证券股份有限公司"
+  },
+  {
+    "code": "002945",
+    "name": "华林证券",
+    "market": "SZ",
+    "full_name": "华林证券股份有限公司"
+  },
+  {
+    "code": "600927",
+    "name": "永安期货",
+    "market": "SH",
+    "full_name": "永安期货股份有限公司"
+  },
+  {
+    "code": "603093",
+    "name": "南华期货",
+    "market": "SH",
+    "full_name": "南华期货股份有限公司"
+  },
+  {
+    "code": "001236",
+    "name": "弘业期货",
+    "market": "SZ",
+    "full_name": "弘业期货股份有限公司"
+  },
+  {
+    "code": "002961",
+    "name": "瑞达期货",
+    "market": "SZ",
+    "full_name": "瑞达期货股份有限公司"
+  },
+  {
+    "code": "600816",
+    "name": "建元信托",
+    "market": "SH",
+    "full_name": "建元信托股份有限公司"
+  },
+  {
+    "code": "300059",
+    "name": "东方财富",
+    "market": "SZ",
+    "full_name": "东方财富信息股份有限公司"
+  },
+  {
+    "code": "300033",
+    "name": "同花顺",
+    "market": "SZ",
+    "full_name": "浙江核新同花顺网络信息股份有限公司"
+  },
+  {
+    "code": "600061",
+    "name": "国投资本",
+    "market": "SH",
+    "full_name": "国投资本股份有限公司"
+  },
+  {
+    "code": "600095",
+    "name": "湘财股份",
+    "market": "SH",
+    "full_name": "湘财股份有限公司"
+  },
+  {
+    "code": "600120",
+    "name": "浙江东方",
+    "market": "SH",
+    "full_name": "浙江东方金融控股集团股份有限公司"
+  },
+  {
+    "code": "600155",
+    "name": "华创云信",
+    "market": "SH",
+    "full_name": "华创云信数字技术股份有限公司"
+  },
+  {
+    "code": "600390",
+    "name": "五矿资本",
+    "market": "SH",
+    "full_name": "五矿资本股份有限公司"
+  },
+  {
+    "code": "600517",
+    "name": "国网英大",
+    "market": "SH",
+    "full_name": "国网英大股份有限公司"
+  },
+  {
+    "code": "600621",
+    "name": "华鑫股份",
+    "market": "SH",
+    "full_name": "上海华鑫股份有限公司"
+  },
+  {
+    "code": "600643",
+    "name": "爱建集团",
+    "market": "SH",
+    "full_name": "上海爱建集团股份有限公司"
+  },
+  {
+    "code": "600864",
+    "name": "哈投股份",
+    "market": "SH",
+    "full_name": "哈尔滨投资股份有限公司"
+  },
+  {
+    "code": "000532",
+    "name": "华金资本",
+    "market": "SZ",
+    "full_name": "珠海华金资本股份有限公司"
+  },
+  {
+    "code": "000567",
+    "name": "海德股份",
+    "market": "SZ",
+    "full_name": "海南海德资本管理股份有限公司"
+  },
+  {
+    "code": "000617",
+    "name": "中油资本",
+    "market": "SZ",
+    "full_name": "中国石油集团资本股份有限公司"
+  },
+  {
+    "code": "000987",
+    "name": "越秀资本",
+    "market": "SZ",
+    "full_name": "广州越秀资本控股集团股份有限公司"
+  },
+  {
+    "code": "002423",
+    "name": "中粮资本",
+    "market": "SZ",
+    "full_name": "中粮资本控股股份有限公司"
+  },
+  {
+    "code": "600000",
+    "name": "浦发银行",
+    "full_name": "上海浦东发展银行股份有限公司",
+    "market": "SH"
+  },
+  {
+    "code": "601825",
+    "name": "沪农商行",
+    "full_name": "上海农村商业银行股份有限公司",
+    "market": "SH"
+  },
+  {
+    "code": "601077",
+    "name": "渝农商行",
+    "full_name": "重庆农村商业银行股份有限公司",
+    "market": "SH"
+  },
+  {
+    "code": "002958",
+    "name": "青农商行",
+    "full_name": "青岛农村商业银行股份有限公司",
+    "market": "SZ"
+  },
+  {
+    "code": "002839",
+    "name": "张家港行",
+    "full_name": "江苏张家港农村商业银行股份有限公司",
+    "market": "SZ"
+  },
+  {
+    "code": "00005",
+    "name": "汇丰控股",
+    "full_name": "香港上海汇丰银行有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "00011",
+    "name": "恒生银行",
+    "full_name": "恒生银行有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "02388",
+    "name": "中银香港",
+    "full_name": "中银香港(控股)有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "00023",
+    "name": "东亚银行",
+    "full_name": "东亚银行有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "02888",
+    "name": "渣打集团",
+    "full_name": "渣打集团有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "01299",
+    "name": "友邦保险",
+    "full_name": "友邦保险控股有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "00966",
+    "name": "中国太平",
+    "full_name": "中国太平保险控股有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "01508",
+    "name": "中国再保险",
+    "full_name": "中国再保险(集团)股份有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "06060",
+    "name": "众安在线",
+    "full_name": "众安在线财产保险股份有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "02378",
+    "name": "保诚",
+    "full_name": "英国保诚集团",
+    "market": "HK"
+  },
+  {
+    "code": "00388",
+    "name": "香港交易所",
+    "full_name": "香港交易及结算所有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "06886",
+    "name": "HTSC",
+    "full_name": "华泰证券股份有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "06030",
+    "name": "中信证券",
+    "full_name": "中信证券股份有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "06881",
+    "name": "中国银河",
+    "full_name": "中国银河证券股份有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "03908",
+    "name": "中金公司",
+    "full_name": "中国国际金融股份有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "01776",
+    "name": "广发证券",
+    "full_name": "广发证券股份有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "06099",
+    "name": "招商证券",
+    "full_name": "招商证券股份有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "02611",
+    "name": "国泰君安",
+    "full_name": "国泰君安国际控股有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "06837",
+    "name": "海通证券",
+    "full_name": "海通证券股份有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "000627",
+    "name": "天茂集团",
+    "full_name": "天茂实业集团股份有限公司(控股国华人寿)",
+    "market": "SZ"
+  },
+  {
+    "code": "02318",
+    "name": "中国平安",
+    "full_name": "中国平安保险(集团)股份有限公司-H股",
+    "market": "HK"
+  },
+  {
+    "code": "02628",
+    "name": "中国人寿",
+    "full_name": "中国人寿保险股份有限公司-H股",
+    "market": "HK"
+  },
+  {
+    "code": "02601",
+    "name": "中国太保",
+    "full_name": "中国太平洋保险(集团)股份有限公司-H股",
+    "market": "HK"
+  },
+  {
+    "code": "01339",
+    "name": "中国人保",
+    "full_name": "中国人民保险集团股份有限公司-H股",
+    "market": "HK"
+  },
+  {
+    "code": "01336",
+    "name": "新华保险",
+    "full_name": "新华人寿保险股份有限公司-H股",
+    "market": "HK"
+  },
+  {
+    "code": "02328",
+    "name": "中国财险",
+    "full_name": "中国人民财产保险股份有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "06963",
+    "name": "阳光保险",
+    "full_name": "阳光保险集团股份有限公司",
+    "market": "HK"
+  },
+  {
+    "code": "00376",
+    "name": "云锋金融",
+    "market": "HK",
+    "full_name": "云锋金融集团有限公司(旗下万通保险)"
+  },
+  {
+    "code": "00945",
+    "name": "宏利金融-S",
+    "market": "HK",
+    "full_name": "宏利金融有限公司(全球保险巨头)"
+  },
+  {
+    "code": "300085",
+    "name": "银之杰",
+    "market": "SZ",
+    "full_name": "深圳市银之杰科技股份有限公司(互联网保险)"
+  },
+  {
+    "code": "300399",
+    "name": "天利科技",
+    "market": "SZ",
+    "full_name": "江西天利科技股份有限公司(保险科技)"
+  },
+  {
+    "code": "300773",
+    "name": "拉卡拉",
+    "market": "SZ",
+    "full_name": "拉卡拉支付股份有限公司(保险经纪)"
+  },
+  {
+    "code": "002315",
+    "name": "焦点科技",
+    "market": "SZ",
+    "full_name": "焦点科技股份有限公司(保险电商平台)"
+  }
+]
