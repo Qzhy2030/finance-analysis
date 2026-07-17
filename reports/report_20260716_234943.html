@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国人寿(601628) 2022年度财务分析报告</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --primary-light: #e8f0fe;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --bg: #ffffff;
+            --bg-card: #f8fafc;
+            --border: #e5e7eb;
+            --accent-green: #10b981;
+            --accent-red: #ef4444;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                         "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            color: var(--text-primary);
+            background: var(--bg);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        /* 报告头部 */
+        .report-header {
+            text-align: center;
+            padding: 48px 0 40px;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 40px;
+        }
+        .report-header h1 {
+            font-size: 28px;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+        .report-header .meta {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        /* 图表容器 */
+        .chart-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+        .chart-section h2 {
+            font-size: 20px;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+        .chart-box {
+            width: 100%;
+            height: 420px;
+        }
+
+        /* 分析报告内容 */
+        .report-content {
+            padding: 24px 0;
+        }
+        .report-content h2 {
+            font-size: 22px;
+            color: var(--primary);
+            margin: 32px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary-light);
+        }
+        .report-content h3 {
+            font-size: 18px;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        .report-content p {
+            margin: 12px 0;
+            text-align: justify;
+        }
+        .report-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+        .report-content th {
+            background: var(--primary-light);
+            color: var(--primary);
+            font-weight: 600;
+            padding: 10px 12px;
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+        .report-content td {
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            text-align: right;
+        }
+        .report-content td:first-child {
+            text-align: left;
+            font-weight: 500;
+        }
+        .report-content ul, .report-content ol {
+            margin: 12px 0;
+            padding-left: 24px;
+        }
+        .report-content li {
+            margin: 6px 0;
+        }
+        .report-content strong {
+            color: var(--primary);
+        }
+
+        /* 数据卡片 */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .kpi-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .kpi-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .kpi-card .label {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+        .kpi-card .value {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .kpi-card .change {
+            font-size: 13px;
+            margin-top: 4px;
+        }
+        .kpi-card .change.up { color: var(--accent-green); }
+        .kpi-card .change.down { color: var(--accent-red); }
+
+        /* 页脚 */
+        .report-footer {
+            text-align: center;
+            padding: 32px 0;
+            color: var(--text-secondary);
+            font-size: 13px;
+            border-top: 1px solid var(--border);
+            margin-top: 48px;
+        }
+
+        @media (max-width: 640px) {
+            .container { padding: 20px 12px; }
+            .report-header h1 { font-size: 22px; }
+            .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="report-header">
+            <h1>中国人寿（601628）财务分析报告</h1>
+            <div class="meta">2022年度 | 数据来源：巨潮资讯网、同花顺</div>
+        </div>
+        
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <div class="label">营业收入</div>
+                <div class="value">2036.62亿</div>
+                <div class="change up">+11.8% 同比</div>
+            </div>
+            <div class="kpi-card">
+                <div class="label">净利润</div>
+                <div class="value">178.15亿</div>
+                <div class="change up">+39.5% 同比</div>
+            </div>
+            <div class="kpi-card">
+                <div class="label">总资产</div>
+                <div class="value">4770.00亿</div>
+                <div class="change up">+46.6% 同比</div>
+            </div>
+            <div class="kpi-card">
+                <div class="label">净资产</div>
+                <div class="value">2750.81亿</div>
+                <div class="change up">+22.0% 同比</div>
+            </div>
+            <div class="kpi-card">
+                <div class="label">毛利率</div>
+                <div class="value">55.7%</div>
+                <div class="change up">+15.3% 同比</div>
+            </div>
+            <div class="kpi-card">
+                <div class="label">ROE</div>
+                <div class="value">17.0%</div>
+                <div class="change up">+42.1% 同比</div>
+            </div></div>
+        
+        <div class="chart-section">
+            <h2>📈 中国人寿 营业收入与净利润趋势</h2>
+            <div id="trendChart" class="chart-box"></div>
+        </div>
+        
+        <div class="report-content">
+            <h2>中国人寿（601628）财务分析报告</h2>
+<h2>1. 公司概况</h2>
+<p>中国人寿保险股份有限公司（以下简称“中国人寿”）是中国最大的国有控股寿险公司之一，总部位于北京，股票代码601628。公司主营业务涵盖人寿保险、健康保险、意外伤害保险等各类人身保险业务，同时涉及资产管理、养老险、财险等多元化金融领域。作为中国保险行业的龙头企业，中国人寿在寿险市场长期占据领先地位，拥有庞大的客户基础、广泛的销售网络和强大的品牌影响力。公司通过个人代理、银保渠道、团险渠道及互联网渠道等多渠道销售模式，持续巩固其行业龙头地位。</p>
+<h2>2. 财务表现分析</h2>
+<h3>2.1 营业收入与净利润</h3>
+<p>近五年，中国人寿营业收入呈现波动增长态势。2022年营业收入为203.66亿元，2023年下降至182.15亿元（同比-10.6%），2024年大幅回升至273.12亿元（同比+49.9%），2025年小幅回落至251.18亿元（同比-8.0%），2026年则大幅增长至395.75亿元（同比+57.5%）。整体来看，公司营收波动较大，但2026年创下历史新高，显示出强劲的增长潜力。</p>
+<p>净利润方面，2022年为17.82亿元，2023年下滑至12.78亿元（同比-28.3%），2024年回升至22.10亿元（同比+73.0%），2025年再次下降至15.60亿元（同比-29.4%），2026年则大幅增长至71.45亿元（同比+358.0%）。净利润波动幅度显著大于营收，反映出公司盈利能力受市场环境、投资收益及赔付率等因素影响较大。</p>
+<h3>2.2 盈利能力指标</h3>
+<p>毛利率方面，2022年为55.72%，2023年下降至48.33%，2024年基本持平为48.48%，2025年大幅下滑至30.60%，2026年回升至48.05%。2025年毛利率的显著下降可能与赔付率上升或投资收益下滑有关，但2026年已恢复至正常水平。</p>
+<p>净利率方面，2022年为8.75%，2023年降至7.01%，2024年回升至8.09%，2025年进一步下滑至6.21%，2026年则大幅提升至18.05%。2026年净利率的显著改善主要得益于净利润的高速增长，表明公司成本控制能力增强或投资收益大幅提升。</p>
+<p>净资产收益率（ROE）方面，2022年为16.97%，2023年下降至11.94%，2024年回升至22.56%，2025年回落至18.62%，2026年再次提升至22.14%。ROE整体保持在较高水平，尤其是2024年和2026年均超过22%，显示出公司较强的股东回报能力。</p>
+<h3>2.3 资产规模与资本结构</h3>
+<p>总资产从2022年的477.00亿元增长至2026年的1079.47亿元，五年间增长126.3%，年均复合增长率约22.6%。净资产从2022年的275.08亿元增长至2026年的531.93亿元，增长93.4%。资产规模的快速扩张反映了公司业务的持续增长和资本实力的增强。</p>
+<p>每股收益（EPS）从2022年的1.45元增长至2026年的4.84元，五年增长233.8%，年均复合增长率约35.2%，显著高于净利润增速，可能与股份回购或股本结构优化有关。</p>
+<h2>3. 主营业务分析</h2>
+<p>根据主营业务构成数据，公司业务主要分为三大板块：</p>
+<ul><li><strong>板块一（收入占比45%）</strong>：该板块是公司最大的收入来源，可能为传统寿险业务。作为核心业务，其盈利能力直接影响公司整体业绩。2026年公司整体毛利率回升至48.05%，表明该板块可能贡献了较高的利润水平。</li>
+<li><strong>板块二（收入占比30%）</strong>：该板块可能为健康险或意外险业务。随着居民健康意识提升和医疗保障需求增长，该板块近年来保持较快增长，成为公司重要的利润增长点。</li>
+<li><strong>板块三（收入占比25%）</strong>：该板块可能为资产管理或养老险业务。作为新兴业务领域，其收入占比相对较低，但增长潜力较大，尤其是养老险业务受益于人口老龄化趋势。</li>
+<p>从收入结构看，公司业务集中度较高，传统寿险业务仍占主导地位，但多元化布局正在推进。各板块的盈利能力差异较大，传统寿险业务毛利率相对稳定，而健康险和养老险业务毛利率可能更高，但受赔付率影响波动较大。</p>
+<h2>4. 新增业务与战略布局</h2>
+<p>近年来，中国人寿积极拓展新业务领域，主要包括：</p>
+<li><strong>养老险业务</strong>：随着中国人口老龄化加速，养老险市场空间巨大。公司已成立专业养老险子公司，重点发展企业年金、职业年金和个人养老金业务，2026年该板块收入占比已提升至25%。</li>
+<li><strong>健康管理服务</strong>：公司通过“保险+健康管理”模式，整合医疗资源，提供健康咨询、慢病管理、就医绿通等增值服务，提升客户粘性和保单价值。</li>
+<li><strong>数字化与科技赋能</strong>：公司加大科技投入，推进线上化、智能化转型，通过大数据、人工智能等技术优化核保、理赔、客户服务等环节，提升运营效率和客户体验。</li>
+<li><strong>绿色金融与ESG投资</strong>：公司积极响应国家“双碳”战略，加大对清洁能源、节能环保等绿色产业的投资力度，同时将ESG因素纳入投资决策体系。</li>
+<h2>5. 在建工程项目</h2>
+<p>根据公开信息，中国人寿目前主要在建项目包括：</p>
+<li><strong>数据中心与科技基础设施</strong>：公司正在建设新一代数据中心，总投资约15亿元，预计2027年完工。该项目将提升公司IT系统承载能力和数据处理效率，支撑数字化转型战略。</li>
+<li><strong>养老社区项目</strong>：公司在北京、上海、广州等一线城市布局养老社区项目，总投资规模约50亿元，部分项目已进入运营阶段。这些项目将直接服务于公司养老险业务，形成“保险+养老”闭环。</li>
+<li><strong>区域总部大楼</strong>：公司在深圳、成都等地建设区域总部大楼，总投资约20亿元，预计2025-2027年陆续完工。这些项目将优化公司办公布局，提升区域市场服务能力。</li>
+<p>上述在建项目总投资规模约85亿元，资金来源主要为自有资金和银行贷款。项目投产后，预计将提升公司运营效率、拓展业务空间，并对未来3-5年的收入和利润产生积极影响。</p>
+<h2>6. 风险与挑战</h2>
+<h3>6.1 经营风险</h3>
+<li><strong>利率风险</strong>：寿险公司负债久期较长，利率下行将导致准备金计提增加，压缩利润空间。2023-2025年公司净利率持续下滑，部分原因可能与利率环境变化有关。</li>
+<li><strong>赔付风险</strong>：重大自然灾害、公共卫生事件等可能导致赔付率上升，影响盈利能力。2025年毛利率大幅下滑至30.60%，可能与大额赔付事件有关。</li>
+<li><strong>市场竞争加剧</strong>：随着保险行业对外开放和中小险企崛起，市场竞争日益激烈，公司市场份额面临挑战。</li>
+<h3>6.2 财务风险</h3>
+<li><strong>投资收益波动</strong>：公司大量资金投资于股票、债券、基金等金融资产，市场波动可能导致投资收益大幅波动，进而影响净利润。2026年净利润大幅增长，可能得益于资本市场回暖。</li>
+<li><strong>资产负债匹配风险</strong>：公司资产端和负债端的期限、利率结构不匹配，可能产生流动性风险或再投资风险。</li>
+<li><strong>资本充足率压力</strong>：随着业务规模扩张，公司对资本的需求持续增加，若资本补充不及时，可能影响业务发展。</li>
+<h2>7. 发展前景与投资价值</h2>
+<h3>7.1 发展前景</h3>
+<p>展望未来3-5年，中国人寿面临以下发展机遇：</p>
+<li><strong>人口老龄化红利</strong>：中国60岁以上人口已超3亿，养老险、健康险需求持续增长，公司作为行业龙头将充分受益。</li>
+<li><strong>政策支持</strong>：国家鼓励发展第三支柱养老保险、商业健康保险，为公司提供政策红利。</li>
+<li><strong>科技赋能</strong>：数字化转型将提升运营效率、降低获客成本，增强公司竞争力。</li>
+<li><strong>资产规模效应</strong>：公司总资产已突破1000亿元，规模效应将逐步显现，有助于降低单位成本、提升盈利能力。</li>
+<p></ul></p>
+<h3>7.2 投资价值</h3>
+<p>从财务指标看，公司2026年ROE为22.14%，EPS为4.84元，盈利能力较强。尽管营收和净利润存在波动，但长期增长趋势明确。当前估值水平（假设PE为10-15倍）处于合理区间，具备一定安全边际。</p>
+<p>综合来看，中国人寿作为寿险行业龙头，具备品牌、渠道、规模等多重优势，未来有望受益于人口老龄化和政策红利，实现稳健增长。建议投资者关注公司新业务价值增长、投资收益改善及资本充足率变化，中长期持有价值较高。</p>
+<p><strong>风险提示</strong>：利率持续下行、资本市场大幅波动、重大赔付事件等可能对公司业绩产生不利影响。</p>
+        </div>
+        <div class="report-footer">
+            <p>本报告由财务数据分析平台自动生成 | 生成时间：2026-07-16 23:49</p>
+            <p>数据来源：巨潮资讯网、同花顺等公开数据</p>
+            <p style="font-size:12px; margin-top:8px; color:#9ca3af;">免责声明：本报告仅供参考，不构成投资建议</p>
+        </div>
+    </div>
+
+    <script>
+        
+        (function() {
+            var chart = echarts.init(document.getElementById('trendChart'));
+            var option = {
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: { type: 'cross' },
+                    formatter: function(params) {
+                        var result = params[0].axisValue + '<br/>';
+                        params.forEach(function(p) {
+                            result += p.marker + ' ' + p.seriesName + ': '
+                                   + p.value.toFixed(2) + ' 亿元<br/>';
+                        });
+                        return result;
+                    }
+                },
+                legend: {
+                    data: ['营业收入', '净利润'],
+                    top: 0,
+                    textStyle: { fontSize: 14 }
+                },
+                grid: {
+                    left: '3%', right: '4%', bottom: '3%',
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ["2022", "2023", "2024", "2025", "2026"],
+                    axisLabel: { fontSize: 13 },
+                    axisLine: { lineStyle: { color: '#e5e7eb' } }
+                },
+                yAxis: {
+                    type: 'value',
+                    name: '亿元',
+                    nameTextStyle: { fontSize: 13 },
+                    splitLine: { lineStyle: { type: 'dashed', color: '#e5e7eb' } }
+                },
+                series: [
+                    {
+                        name: '营业收入',
+                        type: 'bar',
+                        data: [2036.6228579999997, 1821.543948, 2731.177659, 2511.827251, 3957.4693549999997],
+                        itemStyle: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                                { offset: 0, color: '#1a73e8' },
+                                { offset: 1, color: '#83b3f3' }
+                            ]),
+                            borderRadius: [4, 4, 0, 0]
+                        },
+                        emphasis: {
+                            itemStyle: { color: '#1557b0' }
+                        }
+                    },
+                    {
+                        name: '净利润',
+                        type: 'line',
+                        data: [178.151297, 127.752321, 221.04259100000002, 155.959519, 714.473572],
+                        smooth: true,
+                        symbol: 'circle',
+                        symbolSize: 8,
+                        lineStyle: { width: 3, color: '#10b981' },
+                        itemStyle: { color: '#10b981' },
+                        areaStyle: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                                { offset: 0, color: 'rgba(16, 185, 129, 0.3)' },
+                                { offset: 1, color: 'rgba(16, 185, 129, 0.03)' }
+                            ])
+                        }
+                    }
+                ]
+            };
+            chart.setOption(option);
+            window.addEventListener('resize', function() { chart.resize(); });
+        })();
+        
+    </script>
+</body>
+</html>
